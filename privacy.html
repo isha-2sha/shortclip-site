@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · ShortClip</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: October 28, 2026</p>
+
+<p>ShortClip ("the app") is a desktop app that runs only on its owner's own Windows computer. This policy explains what data the app accesses through YouTube API Services and what it does with it.</p>
+
+<h2>YouTube API Services</h2>
+<p>The app uses YouTube API Services. By using the app you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of your data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>What the app accesses</h2>
+<p>When you connect a YouTube channel, the app asks Google for these permissions:</p>
+<ul>
+<li><code>youtube.readonly</code>: used only to read the connected channel's ID, title, handle and thumbnail URL (<code>channels.list</code> with <code>mine=true</code>);</li>
+<li><code>youtube.upload</code>: used only to upload videos you made in the app, with the title, description, tags and privacy setting you chose.</li>
+</ul>
+<p>The app does not read your videos, comments, subscribers, analytics, playlists or any other YouTube data.</p>
+
+<h2>How the data is stored</h2>
+<ul>
+<li>The channel information above and the upload history (video title, time and resulting video link) are saved in a file on your own computer (<code>%APPDATA%\ShortClip\data\db.json</code>).</li>
+<li>Google OAuth tokens are saved on your own computer in <code>%APPDATA%\ShortClip\data\secrets.json</code>.</li>
+<li>The app has no server. No data is sent to the developer or anyone else. Requests go directly from your computer to Google.</li>
+<li>The app does not use cookies, analytics or advertising.</li>
+</ul>
+
+<h2>Sharing</h2>
+<p>YouTube data is not shared with, sold to or disclosed to any third party. Video files you upload are sent only to YouTube.</p>
+
+<h2>Deleting your data and revoking access</h2>
+<ul>
+<li>In the app, open Social Upload and press <strong>Disconnect</strong> (연결 해제) on a channel. The app revokes its Google token and deletes the token and channel information from your computer.</li>
+<li>You can also revoke access at any time on the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.</li>
+<li>Deleting the folder <code>%APPDATA%\ShortClip</code> removes everything the app stored.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+<h2>Contact</h2>
+<p>Questions: <a href="https://github.com/isha-2sha/shortclip-site/issues">open an issue on GitHub</a>.</p>
+
+<h2>개인정보처리방침 (한국어 요약)</h2>
+<ul>
+<li>숏클립은 YouTube API 서비스를 사용합니다. 앱을 쓰면 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>에 동의하는 것으로 봅니다. Google의 데이터 처리는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</li>
+<li>연결한 채널의 ID·이름·핸들·썸네일 주소만 읽고, 사용자가 만든 영상만 업로드합니다.</li>
+<li>채널 정보, 업로드 기록, 인증 토큰은 사용자 컴퓨터(<code>%APPDATA%\ShortClip</code>)에만 저장됩니다. 개발자 서버는 없고, 누구에게도 공유하지 않습니다.</li>
+<li>앱의 '연결 해제'를 누르거나 <a href="https://security.google.com/settings/security/permissions">Google 보안 설정</a>에서 권한을 철회할 수 있습니다. 위 폴더를 지우면 저장된 정보가 모두 삭제됩니다.</li>
+</ul>
+</main>
+</body>
+</html>
